@@ -7,6 +7,7 @@ jobs:
         steps:
         - name: echo
           run: echo hello-world > hello.txt
+
         - name: upload artifact
           uses: actions/upload-artifact@v3
           with:
@@ -22,5 +23,6 @@ jobs:
           with:
             name: artifact-test
             path: ./
+          
         - name: check
           run: cat hello.txt
