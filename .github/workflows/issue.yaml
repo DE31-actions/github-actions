@@ -1,7 +1,5 @@
 name: issue-workflow
-on: 
-  issues:
-    types: [opened]
+on: push
 
 jobs:
   issue-job:
